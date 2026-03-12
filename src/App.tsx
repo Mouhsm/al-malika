@@ -168,12 +168,15 @@ export default function App() {
       {/* Hero Section */}
       <section id="home" className="relative h-screen flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img
-            src="/hero_image_algerian_outfits.webp"
-            alt="Traditional Algerian Kids Clothing"
-            className="w-full h-full object-cover opacity-100"
-            referrerPolicy="no-referrer"
-          />
+          <picture>
+            <source media="(max-width: 768px)" srcSet="/al-malika-hero-image-mobiles.webp" />
+            <img
+              src="/hero_image_algerian_outfits.webp"
+              alt="Traditional Algerian Kids Clothing"
+              className="w-full h-full object-cover opacity-100"
+              referrerPolicy="no-referrer"
+            />
+          </picture>
           <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/40 to-black/80"></div>
         </div>
 
