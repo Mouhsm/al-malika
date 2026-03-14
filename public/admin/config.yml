@@ -1,6 +1,10 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: Mouhsm/al-malika
   branch: main # Branch to update
+  base_url: https://github.com
+  auth_type: pkce
+  app_id: your_github_oauth_app_client_id
 
 media_folder: "public/uploads"
 public_folder: "/uploads"
